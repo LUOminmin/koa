@@ -3,8 +3,8 @@
 var Koa = require('./qkoa');
 var app = new Koa();
 // response
-app.use(ctx => {
-    ctx.body = 'Hello Koa';
+app.use(qqq => {
+    qqq.body = 'Hello Koa';
 });
 app.listen(3000, ()=>{
     console.log('listening 3000...');
@@ -16,7 +16,7 @@ app.listen(3000, ()=>{
 // var http = require('http');
 // var app = new Koa();
 // // response
-// app.use(ctx => {
-//     ctx.body = 'Hello Koa';
+// app.use(qqq => {
+//     qqq.body = 'Hello Koa';
 // })
 // http.createServer(app.callback()).listen(3000);
